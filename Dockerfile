@@ -1,10 +1,8 @@
-FROM python:3.8.5-slim-buster
+FROM ubuntu:20.04
 
 RUN mkdir ./app
 RUN chmod 777 ./app
 WORKDIR /app
-
-ENV PIP_NO_CACHE_DIR 1
 
 RUN apt -qq update
 
